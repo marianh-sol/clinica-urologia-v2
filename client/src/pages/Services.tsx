@@ -28,7 +28,7 @@ export default function Services() {
       title: "Enfermedades de Próstata",
       description: "Atención integral para el crecimiento prostático benigno y detección temprana de cáncer de próstata.",
       icon: <ShieldCheck className="h-12 w-12 text-secondary" />,
-      details: ["Cirugía láser de próstata", "Resección transuretral (RTU)", "Biopsia de próstata"]
+      details: ["Cirugía láser de próstata", "REZUM", "Biopsia de Próstata", "Prostatectomía Radical de Próstata"]
     },
     {
       id: "infecciones",
