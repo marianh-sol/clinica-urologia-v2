@@ -1,10 +1,12 @@
 services:
-  - type: static
+  - type: web
     name: clinica-urologia
+    runtime: static
     buildCommand: pnpm install && pnpm build:static
-    publishDir: dist/public
+    publishPath: dist/public
     routes:
       - type: rewrite
         source: /*
         destination: /index.html
+
 
