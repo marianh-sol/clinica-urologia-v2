@@ -42,7 +42,7 @@ export default function Services() {
       title: "Salud Sexual Masculina",
       description: "Tratamientos confidenciales y efectivos para disfunción eréctil, eyaculación precoz y otras condiciones.",
       icon: <HeartPulse className="h-12 w-12 text-secondary" />,
-      details: ["Terapia de ondas de choque", "Implantes peneanos", "Tratamiento hormonal"]
+      details: ["Tratamiento Médico", "Implantes Peneanos", "Prótesis de Pene", "Tratamiento Hormonal"]
     },
     {
       id: "vph",
