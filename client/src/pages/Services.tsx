@@ -21,7 +21,7 @@ export default function Services() {
       title: "Litiasis Urinaria",
       description: "Diagnóstico y tratamiento de piedras en los riñones, uréteres y vejiga. Utilizamos tecnología láser de última generación para procedimientos mínimamente invasivos.",
       icon: <Activity className="h-12 w-12 text-secondary" />,
-      details: ["Ureteroscopia flexible láser", "Nefrolitotricia percutánea", "Litotricia extracorpórea"]
+      details: ["Ureteroscopia flexible láser", "Nefrolitotricia percutánea"]
     },
     {
       id: "prostata",
