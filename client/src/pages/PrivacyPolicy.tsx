@@ -2,10 +2,15 @@ import React from 'react';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, ShieldCheck, Lock, Globe, Mail } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 export default function PrivacyPolicy() {
   return (
     <div className="flex flex-col w-full bg-gray-50">
+      <SEO
+        title="Aviso de Privacidad | Protección de Datos"
+        description="Conoce cómo protegemos tus datos personales en la clínica del Dr. Jorge Delgado. Cumplimiento con la LFPDPPP y confidencialidad médica."
+      />
       {/* Header Section */}
       <section className="bg-primary py-16 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/medical-icons.png')]"></div>
@@ -20,7 +25,7 @@ export default function PrivacyPolicy() {
       <section className="py-16">
         <div className="container max-w-4xl">
           <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-200 space-y-10">
-            
+
             <div className="space-y-4">
               <div className="flex items-center space-x-3 text-primary">
                 <ShieldCheck className="h-8 w-8" />

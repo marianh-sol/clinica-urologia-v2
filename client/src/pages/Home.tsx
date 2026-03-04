@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import BlurImage from '@/components/BlurImage';
+import SEO from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import {
   ArrowRight,
@@ -89,6 +90,10 @@ export default function Home() {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO
+        title="Urólogo en Tampico | Especialista Certificado"
+        description="Especialista en Urología en Tampico. Cirugía de mínima invasión para litiasis, próstata e infecciones urinarias. Atención para hombres, mujeres y niños. ¡Agenda tu cita hoy!"
+      />
       {/* Hero Section */}
       <section className="relative min-h-[100dvh] lg:h-[800px] flex items-center justify-center overflow-hidden pb-20 lg:pb-0">
         {/* Background Image with Overlay */}

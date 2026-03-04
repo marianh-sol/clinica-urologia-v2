@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
+import SEO from '@/components/SEO';
 import { MapView } from '@/components/Map';
 
 export default function Contact() {
@@ -20,6 +21,10 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO
+        title="Contacto y Ubicación | Agenda tu Cita"
+        description="Contacta al Dr. Jorge Delgado en Tampico. Ubicados en La Bene Hospital. Citas por teléfono o WhatsApp para tu comodidad."
+      />
       {/* Header Section */}
       <section className="bg-primary py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/medical-icons.png')]"></div>

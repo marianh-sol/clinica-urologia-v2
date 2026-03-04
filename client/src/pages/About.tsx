@@ -3,10 +3,15 @@ import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle2, Award, BookOpen, Users } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 export default function About() {
   return (
     <div className="flex flex-col w-full">
+      <SEO
+        title="Sobre el Dr. Jorge Delgado | Urólogo Certificado"
+        description="Conoce al Dr. Jorge J. Delgado Rodríguez, cirujano urólogo certificado en Tampico. Especialista en cirugía de mínima invasión con un enfoque humano y profesional."
+      />
       {/* Header Section */}
       <section className="bg-primary py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/medical-icons.png')]"></div>

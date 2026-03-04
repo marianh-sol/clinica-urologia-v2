@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import SEO from '@/components/SEO';
 import {
   Activity,
   ShieldCheck,
@@ -84,6 +85,10 @@ export default function Services() {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO
+        title="Servicios Urológicos | Tratamientos Avanzados"
+        description="Especialista en litiasis renal, enfermedades de próstata (REZUM), salud sexual masculina, VPH, urología pediátrica y femenina en Tampico."
+      />
       {/* Header Section */}
       <section className="bg-primary py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/medical-icons.png')]"></div>

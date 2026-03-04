@@ -3,6 +3,7 @@ import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Star, Quote } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 export default function Testimonials() {
   const testimonials = [
@@ -52,6 +53,10 @@ export default function Testimonials() {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO
+        title="Testimonios | Opiniones de Pacientes"
+        description="Conoce las historias de éxito y testimonios de pacientes atendidos por el Dr. Jorge Delgado en Tampico. Salud urológica con calidad y calidez."
+      />
       {/* Header Section */}
       <section className="bg-primary py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/medical-icons.png')]"></div>
