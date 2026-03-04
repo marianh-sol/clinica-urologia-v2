@@ -103,21 +103,7 @@ export default function Contact() {
                     </CardContent>
                   </Card>
 
-                  <Card className="border-none shadow-md bg-white">
-                    <CardContent className="p-6 flex items-start space-x-4">
-                      <div className="bg-secondary/10 p-3 rounded-full">
-                        <Clock className="h-6 w-6 text-secondary" />
-                      </div>
-                      <div>
-                        <h3 className="font-bold text-gray-900 text-lg mb-1">Horario de Atención</h3>
-                        <div className="text-muted-foreground space-y-1">
-                          <p><span className="font-medium text-gray-700">Lunes - Viernes:</span> 9:00 AM - 8:00 PM</p>
-                          <p><span className="font-medium text-gray-700">Sábado:</span> 9:00 AM - 2:00 PM</p>
-                          <p><span className="font-medium text-gray-700">Domingo:</span> Cerrado</p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+
                 </div>
               </div>
             </div>
@@ -144,6 +130,30 @@ export default function Contact() {
                     title="Agenda Consulta"
                   >
                   </iframe>
+                </CardContent>
+              </Card>
+
+              <Card className="border-none shadow-md bg-white border-t-4 border-t-primary">
+                <CardContent className="p-6 flex items-start space-x-4">
+                  <div className="bg-secondary/10 p-3 rounded-full">
+                    <Clock className="h-6 w-6 text-secondary" />
+                  </div>
+                  <div className="w-full">
+                    <h3 className="font-bold text-gray-900 text-lg mb-2">Horario de Atención</h3>
+                    <div className="grid grid-cols-2 gap-4 text-sm">
+                      <div className="bg-slate-50 p-2 rounded-lg">
+                        <p className="font-medium text-gray-700">Lun - Vie</p>
+                        <p className="text-muted-foreground">9:00 AM - 8:00 PM</p>
+                      </div>
+                      <div className="bg-slate-50 p-2 rounded-lg">
+                        <p className="font-medium text-gray-700">Sábado</p>
+                        <p className="text-muted-foreground">9:00 AM - 2:00 PM</p>
+                      </div>
+                    </div>
+                    <div className="mt-2 text-xs text-red-500 font-medium italic">
+                      * Domingo: Cerrado
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
 
