@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
-import { Menu, Phone, Clock, MapPin, Facebook, Instagram, MessageCircle } from 'lucide-react';
+import { Menu, Phone, Clock, MapPin, Facebook, Instagram, MessageCircle, ExternalLink, Star } from 'lucide-react';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -128,6 +128,12 @@ export default function Layout({ children }: LayoutProps) {
                       </div>
                       <span className="text-xs font-medium">WhatsApp</span>
                     </a>
+                    <a href="https://www.doctoralia.com.mx/jorge-j-delgado-rodriguez/urologo/tampico" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 hover:text-blue-500 transition-colors">
+                      <div className="p-2 bg-white rounded-full shadow-sm border border-gray-100">
+                        <Star className="h-5 w-5" />
+                      </div>
+                      <span className="text-xs font-medium">Doctoralia</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -227,6 +233,17 @@ export default function Layout({ children }: LayoutProps) {
                   <p>Lun - Vie: 9:00 - 20:00</p>
                   <p>Sáb: 9:00 - 14:00</p>
                 </div>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Star className="h-5 w-5 text-secondary shrink-0" />
+                <a
+                  href="https://www.doctoralia.com.mx/jorge-j-delgado-rodriguez/urologo/tampico"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/80 text-sm hover:text-secondary hover:underline transition-colors"
+                >
+                  Perfil en Doctoralia
+                </a>
               </li>
             </ul>
           </div>

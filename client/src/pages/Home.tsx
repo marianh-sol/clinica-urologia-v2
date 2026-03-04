@@ -16,7 +16,8 @@ import {
   HeartPulse,
   Phone,
   HelpCircle,
-  Calendar
+  Calendar,
+  ExternalLink
 } from 'lucide-react';
 import {
   Accordion,
@@ -333,6 +334,20 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <a
+              href="https://www.doctoralia.com.mx/jorge-j-delgado-rodriguez/urologo/tampico"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-10">
+                <ExternalLink className="mr-2 h-5 w-5" />
+                Ver más opiniones en Doctoralia
+              </Button>
+            </a>
           </div>
         </div>
       </section>
