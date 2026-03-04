@@ -91,8 +91,8 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       <SEO
-        title="Urólogo en Tampico | Especialista Certificado"
-        description="Especialista en Urología en Tampico. Cirugía de mínima invasión para litiasis, próstata e infecciones urinarias. Atención para hombres, mujeres y niños. ¡Agenda tu cita hoy!"
+        title="Dr. Jorge Delgado | Urólogo en Tampico | Especialista Certificado"
+        description="El Dr. Jorge Delgado es especialista en Urología en Tampico. Cirugía de mínima invasión para litiasis, próstata e infecciones urinarias. ¡Agenda tu cita hoy!"
       />
       {/* Hero Section */}
       <section className="relative min-h-[100dvh] lg:h-[800px] flex items-center justify-center overflow-hidden pb-20 lg:pb-0">
@@ -113,7 +113,7 @@ export default function Home() {
               Especialista Certificado
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-heading text-shadow animate-in fade-in slide-in-from-bottom-8 duration-700 delay-100 fill-mode-forwards">
-              Cuidando tu Salud Urológica con <span className="text-secondary">Experiencia</span>
+              Salud Urológica con el <span className="text-secondary">Dr. Jorge Delgado</span>
             </h1>
             <p className="text-base md:text-xl text-white/90 max-w-xl mx-auto lg:mx-0 leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200 fill-mode-forwards">
               Atención especializada para hombres, mujeres y niños. Soluciones efectivas con tecnología de mínima invasión y un trato humano.
@@ -162,7 +162,7 @@ export default function Home() {
       <section className="py-12 lg:py-20 bg-background relative">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-10 lg:mb-16 space-y-4">
-            <h2 className="text-2xl md:text-4xl font-bold text-primary">Soluciones Integrales en Urología</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-primary">Servicios del Dr. Jorge Delgado</h2>
             <p className="text-muted-foreground text-lg">
               Ofrecemos diagnósticos precisos y tratamientos efectivos para una amplia gama de condiciones urológicas.
             </p>

@@ -54,14 +54,14 @@ export default function Testimonials() {
   return (
     <div className="flex flex-col w-full">
       <SEO
-        title="Testimonios | Opiniones de Pacientes"
-        description="Conoce las historias de éxito y testimonios de pacientes atendidos por el Dr. Jorge Delgado en Tampico. Salud urológica con calidad y calidez."
+        title="Testimonios | Pacientes del Dr. Jorge Delgado"
+        description="Lee las opiniones y testimonios de pacientes atendidos por el Dr. Jorge Delgado en Tampico. Salud urológica con calidad y calidez certificada."
       />
       {/* Header Section */}
       <section className="bg-primary py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/medical-icons.png')]"></div>
         <div className="container relative z-10 text-center space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-white font-heading">Historias de Éxito</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white font-heading">Opiniones: Dr. Jorge Delgado</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
             La satisfacción y salud de nuestros pacientes es nuestra mejor carta de presentación.
           </p>

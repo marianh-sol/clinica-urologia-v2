@@ -86,14 +86,14 @@ export default function Services() {
   return (
     <div className="flex flex-col w-full">
       <SEO
-        title="Servicios Urológicos | Tratamientos Avanzados"
-        description="Especialista en litiasis renal, enfermedades de próstata (REZUM), salud sexual masculina, VPH, urología pediátrica y femenina en Tampico."
+        title="Servicios de Urología | Dr. Jorge Delgado | Tampico"
+        description="Especialista Dr. Jorge Delgado: tratamientos para litiasis renal, enfermedades de próstata (REZUM), salud sexual masculina, VPH, urología pediátrica y femenina."
       />
       {/* Header Section */}
       <section className="bg-primary py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/medical-icons.png')]"></div>
         <div className="container relative z-10 text-center space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-white font-heading">Nuestros Servicios</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white font-heading">Servicios del Dr. Jorge Delgado</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
             Soluciones médicas avanzadas para tu salud urológica con tecnología de mínima invasión.
           </p>
@@ -148,7 +148,7 @@ export default function Services() {
           </p>
           <Link href="/contacto">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-10 shadow-lg">
-              Contactar al Doctor
+              Agendar consulta con el Dr. Delgado
             </Button>
           </Link>
         </div>

@@ -22,14 +22,14 @@ export default function Contact() {
   return (
     <div className="flex flex-col w-full">
       <SEO
-        title="Contacto y Ubicación | Agenda tu Cita"
-        description="Contacta al Dr. Jorge Delgado en Tampico. Ubicados en La Bene Hospital. Citas por teléfono o WhatsApp para tu comodidad."
+        title="Dr. Jorge Delgado | Contacto y Ubicación | Tampico"
+        description="Agenda tu cita con el Dr. Jorge Delgado en Tampico. Ubicados en La Bene Hospital. Atención por teléfono o WhatsApp para tu comodidad."
       />
       {/* Header Section */}
       <section className="bg-primary py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/medical-icons.png')]"></div>
         <div className="container relative z-10 text-center space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-white font-heading">Contacto y Ubicación</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white font-heading">Contacto: Dr. Jorge Delgado</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
             Estamos listos para atenderte. Agenda tu cita o visítanos en nuestro consultorio.
           </p>

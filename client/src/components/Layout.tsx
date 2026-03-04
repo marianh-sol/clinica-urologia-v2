@@ -3,6 +3,8 @@ import { Link, useLocation } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import { Menu, Phone, Clock, MapPin, Facebook, Instagram, MessageCircle, ExternalLink, Star } from 'lucide-react';
+import StructuredData from './StructuredData';
+
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -24,6 +26,7 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans">
+      <StructuredData />
       {/* Top Bar */}
       <div className="bg-[#1e3a8a] text-white py-3 text-sm hidden md:block">
         <div className="container flex justify-start items-center space-x-8">

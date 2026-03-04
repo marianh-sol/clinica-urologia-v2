@@ -9,8 +9,8 @@ export default function About() {
   return (
     <div className="flex flex-col w-full">
       <SEO
-        title="Sobre el Dr. Jorge Delgado | Urólogo Certificado"
-        description="Conoce al Dr. Jorge J. Delgado Rodríguez, cirujano urólogo certificado en Tampico. Especialista en cirugía de mínima invasión con un enfoque humano y profesional."
+        title="Dr. Jorge Delgado | Urólogo Certificado en Tampico"
+        description="Conoce la trayectoria del Dr. Jorge J. Delgado Rodríguez, cirujano urólogo certificado. Especialista en mínima invasión con enfoque humano."
       />
       {/* Header Section */}
       <section className="bg-primary py-20 relative overflow-hidden">
@@ -49,7 +49,7 @@ export default function About() {
 
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-primary mb-2">Dr. Jorge J. Delgado Rodríguez</h2>
+                <h2 className="text-3xl font-bold text-primary mb-2">Curriculum: Dr. Jorge Delgado</h2>
                 <h3 className="text-xl text-secondary font-medium mb-6">Cirujano Urólogo - Mínima Invasión</h3>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-4">
                   El Dr. Jorge Delgado es un especialista certificado en urología, dedicado a proporcionar atención médica de la más alta calidad a hombres, mujeres y niños. Su enfoque se centra en el diagnóstico preciso y tratamientos efectivos, utilizando las técnicas más avanzadas de mínima invasión.
