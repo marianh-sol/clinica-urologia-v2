@@ -11,7 +11,8 @@ import {
   Stethoscope,
   Syringe,
   Zap,
-  ArrowRight
+  ArrowRight,
+  Scissors
 } from 'lucide-react';
 
 export default function Services() {
@@ -71,6 +72,13 @@ export default function Services() {
       description: "Tratamiento de incontinencia urinaria y prolapso de órganos pélvicos.",
       icon: <Stethoscope className="h-12 w-12 text-secondary" />,
       details: ["Incontinencia urinaria", "Vejiga hiperactiva", "Infecciones recurrentes", "Litiasis (piedras) de riñón, uréter, vejiga"]
+    },
+    {
+      id: "genitales",
+      title: "Cirugías de Genitales en Hombres",
+      description: "Procedimientos quirúrgicos especializados para el tratamiento de diversas condiciones de los genitales masculinos.",
+      icon: <Scissors className="h-12 w-12 text-secondary" />,
+      details: ["Circuncisión", "Frenilectomía", "Vasectomía", "Varicocelectomía", "Hidrocelectomía"]
     }
   ];
 
