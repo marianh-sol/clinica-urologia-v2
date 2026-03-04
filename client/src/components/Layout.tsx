@@ -27,9 +27,15 @@ export default function Layout({ children }: LayoutProps) {
       {/* Top Bar */}
       <div className="bg-[#1e3a8a] text-white py-3 text-sm hidden md:block">
         <div className="container flex justify-start items-center space-x-8">
-          <div className="flex items-center space-x-2">
-            <Phone className="h-4 w-4" />
-            <span className="font-medium">(833) 241 2392</span>
+          <div className="flex items-center space-x-6">
+            <a href="tel:8332412392" className="flex items-center space-x-2 hover:text-secondary transition-colors">
+              <Phone className="h-4 w-4" />
+              <span className="font-medium">Citas: (833) 241 2392</span>
+            </a>
+            <a href="https://wa.me/528335350020" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 hover:text-green-400 transition-colors">
+              <MessageCircle className="h-4 w-4" />
+              <span className="font-medium">WhatsApp: (833) 535 0020</span>
+            </a>
           </div>
           <div className="flex items-center space-x-2">
             <Clock className="h-4 w-4" />
@@ -122,7 +128,7 @@ export default function Layout({ children }: LayoutProps) {
                       </div>
                       <span className="text-xs font-medium">Llamar</span>
                     </a>
-                    <a href="https://wa.me/528332412392" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 hover:text-green-600 transition-colors">
+                    <a href="https://wa.me/528335350020" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 hover:text-green-600 transition-colors">
                       <div className="p-2 bg-white rounded-full shadow-sm border border-gray-100">
                         <MessageCircle className="h-5 w-5" />
                       </div>
@@ -225,7 +231,15 @@ export default function Layout({ children }: LayoutProps) {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-secondary shrink-0" />
-                <span className="text-primary-foreground/80 text-sm">(833) 241 2392</span>
+                <a href="tel:8332412392" className="text-primary-foreground/80 text-sm hover:text-secondary transition-colors">
+                  Citas: (833) 241 2392
+                </a>
+              </li>
+              <li className="flex items-center space-x-3">
+                <MessageCircle className="h-5 w-5 text-green-400 shrink-0" />
+                <a href="https://wa.me/528335350020" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/80 text-sm hover:text-secondary transition-colors">
+                  WhatsApp: (833) 535 0020
+                </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Clock className="h-5 w-5 text-secondary shrink-0" />
@@ -267,6 +281,20 @@ export default function Layout({ children }: LayoutProps) {
           </div>
         </div>
       </footer>
+
+      {/* Floating WhatsApp Button */}
+      <a
+        href="https://wa.me/528335350020"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#20ba5a] transition-all transform hover:scale-110 active:scale-95 animate-whatsapp flex items-center justify-center group"
+        aria-label="Contactar por WhatsApp"
+      >
+        <MessageCircle className="h-8 w-8" />
+        <span className="absolute right-full mr-4 bg-white text-gray-800 px-4 py-2 rounded-lg text-sm font-bold shadow-xl opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all whitespace-nowrap hidden md:block border border-gray-100 italic">
+          ¡Atención inmediata! 👋
+        </span>
+      </a>
     </div>
   );
 }

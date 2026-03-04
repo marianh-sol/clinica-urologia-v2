@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 import { MapView } from '@/components/Map';
 
 export default function Contact() {
-  
+
   useEffect(() => {
     // Cargar el script del formulario dinámicamente
     const script = document.createElement('script');
@@ -41,7 +41,7 @@ export default function Contact() {
                 <p className="text-muted-foreground text-lg leading-relaxed mb-8">
                   Si tienes alguna duda sobre nuestros servicios o deseas agendar una consulta, no dudes en contactarnos por teléfono, correo o visitándonos directamente.
                 </p>
-                
+
                 <div className="space-y-6">
                   <Card className="border-none shadow-md bg-white">
                     <CardContent className="p-6 flex items-start space-x-4">
@@ -58,22 +58,37 @@ export default function Contact() {
                       </div>
                     </CardContent>
                   </Card>
-                  
-                  <Card className="border-none shadow-md bg-white">
+
+                  <Card className="border-none shadow-md bg-white border-l-4 border-l-blue-500">
                     <CardContent className="p-6 flex items-start space-x-4">
-                      <div className="bg-secondary/10 p-3 rounded-full">
-                        <Phone className="h-6 w-6 text-secondary" />
+                      <div className="bg-blue-50 p-3 rounded-full">
+                        <Phone className="h-6 w-6 text-blue-600" />
                       </div>
                       <div>
-                        <h3 className="font-bold text-gray-900 text-lg mb-1">Teléfono</h3>
-                        <p className="text-muted-foreground mb-1">Llámanos para agendar tu cita:</p>
-                        <a href="tel:8332412392" className="text-primary font-bold text-xl hover:text-secondary transition-colors">
+                        <h3 className="font-bold text-gray-900 text-lg mb-1">Citas Telefónicas</h3>
+                        <p className="text-muted-foreground mb-1 text-sm">Para agendar citas vía telefónica:</p>
+                        <a href="tel:8332412392" className="text-blue-700 font-bold text-xl hover:text-blue-800 transition-colors">
                           (833) 241 2392
                         </a>
                       </div>
                     </CardContent>
                   </Card>
-                  
+
+                  <Card className="border-none shadow-md bg-white border-l-4 border-l-green-500">
+                    <CardContent className="p-6 flex items-start space-x-4">
+                      <div className="bg-green-50 p-3 rounded-full">
+                        <MessageCircle className="h-6 w-6 text-green-600" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-gray-900 text-lg mb-1">WhatsApp Business</h3>
+                        <p className="text-muted-foreground mb-1 text-sm">Atención inmediata por WhatsApp:</p>
+                        <a href="https://wa.me/528335350020" target="_blank" rel="noopener noreferrer" className="text-green-700 font-bold text-xl hover:text-green-800 transition-colors">
+                          (833) 535 0020
+                        </a>
+                      </div>
+                    </CardContent>
+                  </Card>
+
                   <Card className="border-none shadow-md bg-white">
                     <CardContent className="p-6 flex items-start space-x-4">
                       <div className="bg-secondary/10 p-3 rounded-full">
@@ -87,7 +102,7 @@ export default function Contact() {
                       </div>
                     </CardContent>
                   </Card>
-                  
+
                   <Card className="border-none shadow-md bg-white">
                     <CardContent className="p-6 flex items-start space-x-4">
                       <div className="bg-secondary/10 p-3 rounded-full">
@@ -106,7 +121,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            
+
             {/* Form & Map */}
             <div className="space-y-10">
               <Card className="shadow-lg border-t-4 border-t-secondary overflow-hidden">
@@ -114,7 +129,7 @@ export default function Contact() {
                   <iframe
                     src="https://api.leadconnectorhq.com/widget/form/IJMAd0lubS54RX4u0cjr"
                     style={{ width: '100%', height: '100%', border: 'none', borderRadius: '3px' }}
-                    id="inline-IJMAd0lubS54RX4u0cjr" 
+                    id="inline-IJMAd0lubS54RX4u0cjr"
                     data-layout="{'id':'INLINE'}"
                     data-trigger-type="alwaysShow"
                     data-trigger-value=""
@@ -131,9 +146,9 @@ export default function Contact() {
                   </iframe>
                 </CardContent>
               </Card>
-              
+
               <div className="h-[400px] rounded-xl overflow-hidden shadow-lg border border-gray-200">
-                <MapView 
+                <MapView
                   className="w-full h-full"
                   onMapReady={(map: google.maps.Map) => {
                     const location = { lat: 22.255, lng: -97.865 }; // Coordenadas aproximadas de Tampico (La Bene)

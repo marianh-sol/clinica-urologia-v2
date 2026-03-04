@@ -17,7 +17,8 @@ import {
   Phone,
   HelpCircle,
   Calendar,
-  ExternalLink
+  ExternalLink,
+  MessageCircle
 } from 'lucide-react';
 import {
   Accordion,
@@ -414,10 +415,10 @@ export default function Home() {
                     Agendar Cita Online
                   </Button>
                 </Link>
-                <a href="tel:8332412392" className="w-full sm:w-auto">
+                <a href="https://wa.me/528335350020" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                   <Button size="xl" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-primary shadow-xl">
-                    <Phone className="mr-2 h-6 w-6" />
-                    Llamar al Consultorio
+                    <MessageCircle className="mr-2 h-6 w-6" />
+                    WhatsApp Business
                   </Button>
                 </a>
               </div>
