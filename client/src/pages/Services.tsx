@@ -70,7 +70,7 @@ export default function Services() {
       title: "Urología Femenina",
       description: "Tratamiento de incontinencia urinaria y prolapso de órganos pélvicos.",
       icon: <Stethoscope className="h-12 w-12 text-secondary" />,
-      details: ["Incontinencia urinaria", "Vejiga hiperactiva", "Infecciones recurrentes"]
+      details: ["Incontinencia urinaria", "Vejiga hiperactiva", "Infecciones recurrentes", "Litiasis (piedras) de riñón, uréter, vejiga"]
     }
   ];
 
