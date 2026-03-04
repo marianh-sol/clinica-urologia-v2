@@ -3,12 +3,12 @@ import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import BlurImage from '@/components/BlurImage';
 import { Card, CardContent } from '@/components/ui/card';
-import { 
-  ArrowRight, 
-  Activity, 
-  ShieldCheck, 
-  UserCheck, 
-  Clock, 
+import {
+  ArrowRight,
+  Activity,
+  ShieldCheck,
+  UserCheck,
+  Clock,
   Star,
   CheckCircle2,
   Stethoscope,
@@ -91,9 +91,9 @@ export default function Home() {
       <section className="relative min-h-[100dvh] lg:h-[800px] flex items-center justify-center overflow-hidden pb-20 lg:pb-0">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/hero-bg.jpg" 
-            alt="Consultorio Urológico Moderno" 
+          <img
+            src="/images/hero-bg.jpg"
+            alt="Consultorio Urológico Moderno"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40 mix-blend-multiply" />
@@ -113,36 +113,36 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-300 fill-mode-forwards">
               <Link href="/contacto" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-white font-bold rounded-full px-8 h-12 md:h-14 text-base md:text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                <Button size="lg" className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-white font-bold px-8 shadow-xl">
                   Agendar Cita Ahora
                 </Button>
               </Link>
               <Link href="/servicios" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary font-bold rounded-full px-8 h-12 md:h-14 text-base md:text-lg transition-all">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-primary font-bold px-8 shadow-lg">
                   Nuestros Servicios
                 </Button>
               </Link>
             </div>
-            
-            
+
+
           </div>
-          
+
           <div className="relative mt-8 lg:mt-0 animate-in fade-in slide-in-from-right-16 duration-1000 delay-500 fill-mode-forwards mx-auto max-w-sm lg:max-w-none">
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 transform rotate-2 hover:rotate-0 transition-transform duration-500">
-              <BlurImage 
-                src="/images/doctor.png" 
-                alt="Dr. Jorge Delgado" 
+              <BlurImage
+                src="/images/doctor.png"
+                alt="Dr. Jorge Delgado"
                 className="w-full h-auto object-cover bg-white/10 backdrop-blur-sm"
               />
             </div>
             {/* Decorative elements */}
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob"></div>
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-white rounded-full mix-blend-overlay filter blur-2xl opacity-50 animate-blob animation-delay-2000"></div>
-            
+
 
           </div>
         </div>
-        
+
         {/* Wave divider */}
         <div className="absolute bottom-0 left-0 right-0">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full h-auto text-background fill-current">
@@ -179,10 +179,10 @@ export default function Home() {
               </Card>
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <Link href="/servicios">
-              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white transition-colors">
+              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white px-10">
                 Ver Todos los Servicios
               </Button>
             </Link>
@@ -196,9 +196,9 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <div className="relative order-2 lg:order-1">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src="/images/doctor-desk.jpg" 
-                  alt="Dr. Jorge Delgado" 
+                <img
+                  src="/images/doctor-desk.jpg"
+                  alt="Dr. Jorge Delgado"
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -216,7 +216,7 @@ export default function Home() {
               </div>
               <div className="absolute top-10 -left-10 w-20 h-20 bg-dots-pattern opacity-30"></div>
             </div>
-            
+
             <div className="space-y-6 lg:space-y-8 order-1 lg:order-2">
               <div>
                 <h2 className="text-2xl md:text-4xl font-bold text-primary mb-2 lg:mb-4">Dr. Jorge Delgado</h2>
@@ -228,7 +228,7 @@ export default function Home() {
                   Especialista en cirugía de mínima invasión, endourología y salud prostática. Miembro activo de las asociaciones urológicas más prestigiosas a nivel nacional e internacional.
                 </p>
               </div>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-center space-x-3">
@@ -239,14 +239,14 @@ export default function Home() {
               </div>
 
               <div className="flex flex-wrap gap-6 pt-6">
-                 <img src="/images/cert-aua-hq.png" alt="American Urological Association" className="h-16 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity" />
-                 <img src="/images/cert-consejo-hq.png" alt="Consejo Nacional Mexicano de Urología" className="h-16 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity" />
-                 <img src="/images/cert-smu-hq.png" alt="Sociedad Mexicana de Urología" className="h-16 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity" />
+                <img src="/images/cert-aua-hq.png" alt="American Urological Association" className="h-16 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity" />
+                <img src="/images/cert-consejo-hq.png" alt="Consejo Nacional Mexicano de Urología" className="h-16 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity" />
+                <img src="/images/cert-smu-hq.png" alt="Sociedad Mexicana de Urología" className="h-16 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity" />
               </div>
 
               <div className="pt-4">
                 <Link href="/acerca">
-                  <Button className="bg-primary hover:bg-primary/90 text-white">
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8">
                     Conoce más sobre el Doctor
                   </Button>
                 </Link>
@@ -386,26 +386,26 @@ export default function Home() {
             {/* Decorative circles */}
             <div className="absolute top-0 left-0 w-64 h-64 bg-white opacity-5 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary opacity-10 rounded-full translate-x-1/3 translate-y-1/3"></div>
-            
+
             <div className="relative z-10 max-w-3xl mx-auto space-y-8">
-            <h2 className="text-2xl md:text-5xl font-bold mb-4 lg:mb-6 text-white">¿Listo para recuperar tu bienestar?</h2>
-            <p className="text-base lg:text-xl text-white/90 mb-6 lg:mb-8">
-              No dejes pasar más tiempo. Agenda tu consulta hoy mismo y recibe la atención especializada que mereces.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link href="/contacto" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-white font-bold rounded-full px-8 h-12 md:h-14 text-base md:text-lg shadow-lg">
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Agendar Cita Online
-                </Button>
-              </Link>
-              <a href="tel:8332412392" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary font-bold rounded-full px-8 h-12 md:h-14 text-base md:text-lg">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Llamar al Consultorio
-                </Button>
-              </a>
-            </div>
+              <h2 className="text-2xl md:text-5xl font-bold mb-4 lg:mb-6 text-white">¿Listo para recuperar tu bienestar?</h2>
+              <p className="text-base lg:text-xl text-white/90 mb-6 lg:mb-8">
+                No dejes pasar más tiempo. Agenda tu consulta hoy mismo y recibe la atención especializada que mereces.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <Link href="/contacto" className="w-full sm:w-auto">
+                  <Button size="xl" className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-white shadow-2xl">
+                    <Calendar className="mr-2 h-6 w-6" />
+                    Agendar Cita Online
+                  </Button>
+                </Link>
+                <a href="tel:8332412392" className="w-full sm:w-auto">
+                  <Button size="xl" variant="outline" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-primary shadow-xl">
+                    <Phone className="mr-2 h-6 w-6" />
+                    Llamar al Consultorio
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>

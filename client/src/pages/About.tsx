@@ -24,13 +24,13 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div className="relative">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white mb-8">
-                <img 
-                  src="/images/doctor-profile-stylized.png" 
-                  alt="Dr. Jorge Delgado" 
+                <img
+                  src="/images/doctor-profile-stylized.png"
+                  alt="Dr. Jorge Delgado"
                   className="w-full h-auto object-cover bg-gray-100"
                 />
               </div>
-              
+
               {/* Certification Logos Moved Here */}
               <div className="flex flex-wrap gap-4 justify-center">
                 <img src="/images/certification-aua.png" alt="AUA" className="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all" />
@@ -41,7 +41,7 @@ export default function About() {
               <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-secondary/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
               <div className="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
             </div>
-            
+
             <div className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold text-primary mb-2">Dr. Jorge J. Delgado Rodríguez</h2>
@@ -53,7 +53,7 @@ export default function About() {
                   Con una sólida formación académica y continua actualización en los últimos avances urológicos, el Dr. Delgado se distingue por su trato humano, ético y profesional, asegurando que cada paciente reciba una atención personalizada y comprensiva.
                 </p>
               </div>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <Card className="border-none shadow-md bg-accent/20">
                   <CardContent className="p-6 flex flex-col items-center text-center space-y-3">
@@ -70,7 +70,7 @@ export default function About() {
                   </CardContent>
                 </Card>
               </div>
-              
+
               <div>
                 <h4 className="font-bold text-lg mb-4 text-primary">Formación y Credenciales</h4>
                 <ul className="space-y-3">
@@ -131,13 +131,13 @@ export default function About() {
           </div>
         </div>
       </section>
-      
+
       {/* CTA */}
       <section className="py-16 bg-accent/30 text-center">
         <div className="container space-y-6">
           <h2 className="text-3xl font-bold text-primary">Tu salud en manos expertas</h2>
           <Link href="/contacto">
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold rounded-full px-10 shadow-lg">
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold px-12 shadow-xl">
               Agendar Cita con el Dr. Delgado
             </Button>
           </Link>

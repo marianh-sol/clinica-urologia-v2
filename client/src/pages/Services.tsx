@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { 
-  Activity, 
-  ShieldCheck, 
-  Microscope, 
-  HeartPulse, 
-  Baby, 
-  Stethoscope, 
-  Syringe, 
+import {
+  Activity,
+  ShieldCheck,
+  Microscope,
+  HeartPulse,
+  Baby,
+  Stethoscope,
+  Syringe,
   Zap,
   ArrowRight
 } from 'lucide-react';
@@ -134,7 +134,7 @@ export default function Services() {
             Contáctanos para recibir información personalizada sobre tu padecimiento. Estamos aquí para ayudarte.
           </p>
           <Link href="/contacto">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-8">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-10 shadow-lg">
               Contactar al Doctor
             </Button>
           </Link>

@@ -48,16 +48,16 @@ export default function Layout({ children }: LayoutProps) {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {navigation.map((item) => (
-              <Link 
-                key={item.name} 
-                href={item.href} 
+              <Link
+                key={item.name}
+                href={item.href}
                 className={`text-[15px] font-bold uppercase tracking-wide transition-colors hover:text-[#0ea5e9] cursor-pointer ${isActive(item.href) ? 'text-[#0ea5e9]' : 'text-[#1e3a8a]'}`}
               >
                 {item.name}
               </Link>
             ))}
             <Link href="/contacto">
-              <Button className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold rounded-full px-8 py-6 text-base shadow-none transition-colors">
+              <Button size="lg" className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold px-10 shadow-md">
                 Agendar Cita
               </Button>
             </Link>
@@ -73,7 +73,7 @@ export default function Layout({ children }: LayoutProps) {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[350px] p-0 border-l border-border/40">
               <SheetTitle className="sr-only">Menú de navegación</SheetTitle>
-              
+
               <div className="flex flex-col h-full bg-white">
                 {/* Mobile Menu Header */}
                 <div className="p-6 border-b border-gray-100 flex items-center justify-between bg-slate-50/50">
@@ -90,13 +90,13 @@ export default function Layout({ children }: LayoutProps) {
                 {/* Mobile Menu Items */}
                 <nav className="flex-1 flex flex-col p-6 space-y-2 overflow-y-auto">
                   {navigation.map((item) => (
-                    <Link 
-                      key={item.name} 
+                    <Link
+                      key={item.name}
                       href={item.href}
                       className={`
                         group flex items-center justify-between p-4 rounded-xl text-lg font-medium transition-all duration-200
-                        ${isActive(item.href) 
-                          ? 'bg-primary/5 text-primary shadow-sm border border-primary/10' 
+                        ${isActive(item.href)
+                          ? 'bg-primary/5 text-primary shadow-sm border border-primary/10'
                           : 'text-gray-600 hover:bg-gray-50 hover:text-primary hover:translate-x-1'}
                       `}
                       onClick={() => setIsMobileMenuOpen(false)}
@@ -114,7 +114,7 @@ export default function Layout({ children }: LayoutProps) {
                       Agendar Cita
                     </Button>
                   </Link>
-                  
+
                   <div className="flex justify-center space-x-6 pt-2 text-gray-400">
                     <a href="tel:8332412392" className="flex flex-col items-center gap-1 hover:text-primary transition-colors">
                       <div className="p-2 bg-white rounded-full shadow-sm border border-gray-100">
@@ -151,7 +151,7 @@ export default function Layout({ children }: LayoutProps) {
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Cuidando tu salud urológica con experiencia, profesionalismo y tecnología de vanguardia para hombres, mujeres y niños.
             </p>
-            
+
           </div>
 
           <div>
@@ -159,7 +159,7 @@ export default function Layout({ children }: LayoutProps) {
             <ul className="space-y-3">
               {navigation.map((item) => (
                 <li key={item.name}>
-                  <Link 
+                  <Link
                     href={item.href}
                     className="text-primary-foreground/80 hover:text-secondary transition-colors text-sm flex items-center cursor-pointer"
                   >
@@ -238,7 +238,7 @@ export default function Layout({ children }: LayoutProps) {
               © {new Date().getFullYear()} Dr. Jorge Delgado. Todos los derechos reservados. <br className="md:hidden" />
               Cédula Profesional y Aviso de Publicidad COFEPRIS en trámite.
             </p>
-            
+
             {/* Disclaimer Section */}
             <p className="text-primary-foreground/40 text-[10px] text-center md:text-right max-w-2xl mx-auto md:mx-0 leading-tight">
               La información en este sitio web es solo para fines educativos y no sustituye el consejo médico profesional, diagnóstico o tratamiento. Siempre busque el consejo de su médico u otro proveedor de salud calificado con cualquier pregunta que pueda tener sobre una condición médica.
